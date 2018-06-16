@@ -1,1 +1,16 @@
+@media (min-width: 1000px) {
+  .backgroundImg {
+    background-image: url("/assets/img/side1.jpg"), url("/assets/img/side2.jpg");
+    background-position: right top, left top;
+    background-repeat: repeat-y, repeat-y;
+    background-size: 25%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .backgroundImg {
+    background-image: none;
+  }
+}
 
