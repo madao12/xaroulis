@@ -1,6 +1,9 @@
-<div class="ui-g preventcopy" style="text-align: center; background-color: #007849">
+
+<div class="ui-g preventcopy" style="background-color: #007849">
+
   <div class="ui-g-12" style="text-align: center">
     <img src="assets/img/logo.jpg" style="width:300px">
+
   </div>
 
 </div>
@@ -10,40 +13,30 @@
     <div class="ui-g-12 ui-md-6 ui-lg-4">
     </div>
     <div class="ui-g-12 ui-md-6 ui-lg-4">
-      <h2>ΕΤΑΙΡΙΚΟ ΠΡΟΦΙΛ</h2>
+        <img (click)="changeLanguage('eng')" style="float:right; height: 25px;width: 25px;" src="/assets/img/eng.png">
+        <img (click)="changeLanguage('gr')" style="float:right; height: 25px;width: 25px;" src="/assets/img/gr.png">
+      <h2>{{content.companyProfile}}</h2>
       <p style="text-align: left">
-        Η βιομηχανία πλαστικών με τον διακριτικό τίτλο ''ΠΛΑΣΤΙΚΑ-ΧΑΡΟΥΛΗ'' διανύει τον 29 χρόνο από την ίδρυση της, διατηρώντας
-        διαχρονικά την εξειδίκευση της αποκλειστικά στην παραγωγή πλαστικών θηκών συσκευασίας φρούτων – λαχανικών.
-      </p>
-      <p style="text-align: left">
-        Οι ηθικές αρχές και ο επαγγελματισμός που διακρίνουν την ιδιοκτήτρια της εταιρείας ΕΥΑΓΓΕΛΟΠΟΥΛΟΥ Γ. ΔΙΑΜΑΝΤΩ σε συνδυασμό
-        με τα πανάξια στελέχη της, αποδείχτηκαν αρωγός στην διαχρονική αυξανόμενη καταξίωση της τόσο στην εσωτερική όσο και
-        στην εξωτερική αγορά.
+        {{content.companyProfileText}}
       </p>
 
       <br>
-      <h2>ΥΠΟΔΟΜΕΣ</h2>
+      <h2>{{content.foundation}}</h2>
 
       <p style="text-align: left">
           <img src="assets/img/store.jpg" style="width:40%;float: right;">
-        Η έδρα της εταιρείας βρίσκεται στην περιοχή Μακροχώρι του Ν.Ημαθείας με τις κτιριακές εγκαταστάσεις να ειναι άνω των 3,000
-        m² και το μόνιμο προσωπικό παραγωγής να ξεπερνάει τους 30 υπαλλήλους. Η συνεχής αναβάθμιση των μηχανών παραγωγής
-        ,και η επιμονή για την χρήση ποιοτικών πρώτων υλών σε συνδυασμό με το εμπειρότατο προσωπικό και πάνω από όλα ο σεβασμός
-        που επιδεικνύουμε σε παλιούς και νέους συνεργάτες αποτελούν την πλέον ασφαλή εγγύηση σε αυτούς για μια άκρως επαγγελματική
-        συνεργασία με διαχρονικό χαρακτήρα.
+        {{content.foundationText}}
       </p>
 
       <br>
-      <h2>ΠΟΙΟΤΙΚΗ ΕΠΙΒΡΑΒΕΥΣΗ</h2>
+      <h2>{{content.quality}}</h2>
       <p style="text-align: left">
-        Μια από τις κορυφαίες στιγμές της εταιρείας ήταν και η βράβευση της με το βραβείο ποιότητας σε εκθέσεις της Γαλλίας και της
-        Ισπανίας της οποίας ο ανταγωνισμός ξεπερνούσε τις 300 εταιρείες από όλο τον κόσμο
+        {{content.qualityText}}
       </p>
       <br>
-      <h2>ΠΡΟΤΑΣΗ ΣΥΝΕΡΓΑΣΙΑΣ</h2>
+      <h2>{{content.partnership}}</h2>
       <p style="text-align: left">
-        Με την σιγουριά ότι έχουμε την υποδομή να ικανοποιήσουμε τις απαιτήσεις της σύγχρονης αγοράς είμαστε έτοιμη να διευρύνουμε
-        τις συνεργασίες μας σε Εθνικό και Ευρωπαϊκό επίπεδο.
+       {{content.partnershipText}}
       </p>
       <br>
 
@@ -51,12 +44,12 @@
 
 
 
-      <h3> ΕΠΙΚΟΙΝΩΝΙΑ:</h3>
+      <h3> {{content.contact}}:</h3>
       <p style="text-align: left">
-        Τηλέφωνο: 2331041177
-        <br> Fax: 2331041723
-        <br> E-mail: <a href="mailto:info@plastika-harouli.gr">info@plastika-harouli.gr</a>
-        <br> Τμήμα Πωλήσεων: <a href="mailto:exporterdirector@plastika-harouli.gr">exporterdirector@plastika-harouli.gr</a>
+        {{content.telephone}}: 2331041177
+        <br>{{content.fax}}: 2331041723
+        <br>{{content.mail}}: <a href="mailto:info@plastika-harouli.gr">info@plastika-harouli.gr</a>
+        <br>{{content.mail2}}: <a href="mailto:exporterdirector@plastika-harouli.gr">exporterdirector@plastika-harouli.gr</a>
 
         <br>
       </p>
