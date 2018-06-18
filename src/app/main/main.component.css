@@ -22,3 +22,16 @@
   -ms-user-select: none;
   user-select: none;
  }
+
+ .langIcon{
+  float:right;
+  height: 25px;
+  width: 25px;
+  margin: 3px;
+ }
+
+ .langIcon:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+
+ }

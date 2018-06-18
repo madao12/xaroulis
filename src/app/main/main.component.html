@@ -1,4 +1,3 @@
-
 <div class="ui-g preventcopy" style="background-color: #007849">
 
   <div class="ui-g-12" style="text-align: center">
@@ -12,8 +11,11 @@
     <div class="ui-g-12 ui-md-6 ui-lg-4">
     </div>
     <div class="ui-g-12 ui-md-6 ui-lg-4">
-        <img (click)="changeLanguage('eng')" style="float:right; height: 25px;width: 25px;" src="assets/img/eng.png">
-        <img (click)="changeLanguage('gr')" style="float:right; height: 25px;width: 25px;" src="assets/img/gr.png">
+      <div>
+        <img class="langIcon" (click)="changeLanguage('eng')" src="assets/img/eng.png">
+        <img class="langIcon" (click)="changeLanguage('gr')" src="assets/img/gr.png">
+      </div>
+
       <h2>{{content.companyProfile}}</h2>
       <p style="text-align: left">
         {{content.companyProfileText}}
@@ -23,8 +25,7 @@
       <h2>{{content.foundation}}</h2>
 
       <p style="text-align: left">
-          <img src="assets/img/store.jpg" style="width:40%;float: right;">
-        {{content.foundationText}}
+        <img src="assets/img/store.jpg" style="width:40%;float: right;"> {{content.foundationText}}
       </p>
 
       <br>
@@ -35,7 +36,7 @@
       <br>
       <h2>{{content.partnership}}</h2>
       <p style="text-align: left">
-       {{content.partnershipText}}
+        {{content.partnershipText}}
       </p>
       <br>
 
@@ -47,8 +48,10 @@
       <p style="text-align: left">
         {{content.telephone}}: 2331041177
         <br>{{content.fax}}: 2331041723
-        <br>{{content.mail}}: <a href="mailto:info@plastika-harouli.gr">info@plastika-harouli.gr</a>
-        <br>{{content.mail2}}: <a href="mailto:exporterdirector@plastika-harouli.gr">exporterdirector@plastika-harouli.gr</a>
+        <br>{{content.mail}}:
+        <a href="mailto:info@plastika-harouli.gr">info@plastika-harouli.gr</a>
+        <br>{{content.mail2}}:
+        <a href="mailto:exporterdirector@plastika-harouli.gr">exporterdirector@plastika-harouli.gr</a>
 
         <br>
       </p>

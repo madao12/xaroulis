@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
   changeLanguage(language: String) {
     if (language === 'gr') {
       this.content = GREEK;
-    } else {
+    } else if (language === 'eng') {
       this.content = ENGLISH;
     }
 
